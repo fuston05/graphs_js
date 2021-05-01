@@ -47,3 +47,8 @@ class Queue {
     return this.queue.length;
   }
 }
+
+module.exports = {
+  Stack,
+  Queue,
+};

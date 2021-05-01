@@ -1,8 +1,11 @@
 // Simple graph implementation
+const { Stack, Queue } = require('./utils');
 
 class Graph{
   // Represent a graph as a dictionary of vertices mapping labels to edges.
-
+  constructor() {
+    this.veticies = {};
+  }
 
   // **** METHODS ****
   // *****************

@@ -1,6 +1,6 @@
 // **** Create a stack class ****
 
-export class Stack {
+class Stack {
   constructor() {
     this.stack = [];
     // First In First Out
@@ -23,8 +23,27 @@ export class Stack {
   }
 }
 
-// Create a Queue class
-// enqueue
-// dequeue
-// size
+// **** Create a Queue class ****
+class Queue {
+  constructor() {
+    this.queue = [];
+    // Last In First Out
+    //  end --> [] <-- front
+  }
 
+  // **** METHODS ****
+
+  // ADDS to the [] <-- front of queue array
+  enqueue(value) {
+    this.queue.push(value);
+  }
+
+  // REMOVES from the [] <-- front of queue array
+  dequeue() {
+    return this.queue.pop();
+  }
+
+  size() {
+    return this.queue.length;
+  }
+}

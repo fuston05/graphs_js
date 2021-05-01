@@ -1,4 +1,5 @@
-// Create a stack class
+// **** Create a stack class ****
+
 export class Stack {
   constructor() {
     this.stack = [];
@@ -7,17 +8,16 @@ export class Stack {
   }
   // **** METHODS ****
 
-  // push
-  push(value) {
-    // adds to the [] <-- end of stack array
+  // adds to the [] <-- end of stack array
+  add(value) {
     this.stack.push(value);
   }
-  // pop
-  pop() {
-    // removes from front --> [] of stack array
+
+  // removes from front --> [] of stack array
+  remove() {
     return this.stack.shift();
   }
-  // size
+
   size() {
     return this.stack.length;
   }
